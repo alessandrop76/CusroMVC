@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartupObject>CursoMVC.Program</StartupObject>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <Copyright>AP I.T Solutions Desenvolvimento de Software</Copyright>
+    <Authors>alessandrop76</Authors>
+    <Description>C# - CRUD - Scafold - Tests</Description>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>http://alessandrop76.gearhostpreview.com/</PackageProjectUrl>
+    <PackageReleaseNotes>Vesrão Inicial com testes unitários  e Swagger</PackageReleaseNotes>
+    <PackageLicenseExpression>alessandrop76</PackageLicenseExpression>
+    <ApplicationIcon>apit.ico</ApplicationIcon>
+    <UserSecretsId>667e16c6-a4df-47e8-a7a8-35a95c206817</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200702032125_TabelaCategora.cs" />
+    <Compile Remove="Migrations\20200702032125_TabelaCategora.Designer.cs" />
+    <Compile Remove="Migrations\20200702032231_TabelaCategoria.cs" />
+    <Compile Remove="Migrations\20200702032231_TabelaCategoria.Designer.cs" />
+    <Compile Remove="Migrations\20200702032306_TabelaProduto.cs" />
+    <Compile Remove="Migrations\20200702032306_TabelaProduto.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.5" />
+    <PackageReference Include="microsoft.entityframeworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="microsoft.entityframeworkCore.tools" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.20" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore.Design" Version="8.0.19" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+  </ItemGroup>
+
+</Project>
